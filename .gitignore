@@ -1,0 +1,32 @@
+# Fichiers compilés Java (.class)
+*.class
+hello/*.class
+
+# Fichier IOR généré par le serveur
+ior.txt
+
+# Fichiers temporaires
+*.tmp
+*.temp
+
+# Fichiers de log
+*.log
+
+# Fichiers de configuration IDE
+.vscode/
+.idea/
+*.iml
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de sauvegarde
+*.bak
+*~
+
+# Fichiers de capture d'écran (optionnel - vous pouvez les garder)
+# capture_*.png
+
+# Rapport (optionnel - vous pouvez le garder si vous voulez le partager)
+RAPPORT_TP1_CORBA.md
