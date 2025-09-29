@@ -1,23 +1,23 @@
 # TP1 - Application CORBA Hello World
 
 ## Description
-Ce projet implémente une application CORBA simple qui permet à un client de communiquer avec un serveur pour afficher un message "Hello World".
+Ce TP implémente une application CORBA simple qui permet à un client de communiquer avec un serveur pour afficher un message "Hello World".
 
 ## Structure du projet
 ```
 TP1/
-├── hello.idl                    # Interface IDL
-├── ior.txt                      # Fichier IOR généré par le serveur
-├── hello/                       # Package contenant les classes Java
+├── hello.idl                   # Interface IDL
+├── ior.txt                     # Fichier IOR généré par le serveur
+├── hello/                      # Package contenant les classes Java
 │   ├── Client.java             # Client CORBA
 │   ├── Server.java             # Serveur CORBA
 │   ├── HelloImpl.java          # Implémentation de l'objet Hello
 │   └── [Classes générées par idlj]
-└── README.md                   # Ce fichier
+└── README.md                   
 ```
 
 ## Prérequis
-- JDK 1.8 ou supérieur
+- JDK 1.8
 - Compilateur IDL (idlj) inclus dans le JDK
 
 ## Instructions d'installation et d'exécution
@@ -32,6 +32,7 @@ idlj -fall hello.idl
 ```bash
 javac hello/*.java
 ```
+<img width="992" height="111" alt="Capture d'écran 2025-09-29 202016" src="https://github.com/user-attachments/assets/16f21462-a8bd-4e5b-95ab-48506c4ab052" />
 
 ### 3. Exécution du serveur
 ```bash
@@ -42,6 +43,9 @@ java hello.Server
 - Un fichier `ior.txt` est créé contenant la référence d'objet IOR
 - Le serveur reste en attente de connexions
 
+<img width="991" height="74" alt="Capture d'écran 2025-09-29 202037" src="https://github.com/user-attachments/assets/aac07f81-11d9-46bc-bb99-0c128e138880" />
+<img width="307" height="144" alt="Capture d'écran 2025-09-29 215327" src="https://github.com/user-attachments/assets/11a96fa5-e8d7-48e8-86df-72a1e4df1ed5" />
+
 ### 4. Exécution du client
 ```bash
 java hello.Client
@@ -49,6 +53,9 @@ java hello.Client
 **Résultat attendu :**
 - Le client se connecte au serveur
 - Affiche "Response from hello.Server: Hello, World!"
+
+<img width="971" height="81" alt="Capture d'écran 2025-09-29 202148" src="https://github.com/user-attachments/assets/5eb3a311-dc05-4c0b-8ebe-c140f3735ca8" />
+
 
 ## Exécution sur machines différentes
 
