@@ -139,4 +139,4 @@ taskkill /F /PID <PID>
 - **IDL (Interface Definition Language)** : Langage de définition d'interface
 
 ## Auteur
-[Votre nom] - TP1 Intégration des Services et des Objets
+Wiame Yousfi - TP1 Intégration des Services et des Objets
